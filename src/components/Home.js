@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div>
-      <Box sx={{ height: "90vh" }}>
+      <Box sx={{ height: "95vh" }}>
         <Grid
           container
           columns={20}
@@ -27,12 +27,12 @@ const Home = () => {
           <Grid item xs={1}></Grid>
           {/* Left Section */}
           <Grid item xs={isMobile ? 18 : 10}>
-            <Typography variant="h1">
+            <Typography variant={isMobile ? "h2" : "h1"}>
               Hello,
               <br />
               I'm Taruna!
             </Typography>
-            <Typography variant="h5">
+            <Typography variant={isMobile ? "h6" : "h3"}>
               Fresh Graduated Electrical Engineer from bandung institute of
               technology{" "}
             </Typography>

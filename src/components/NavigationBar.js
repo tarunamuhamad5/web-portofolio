@@ -5,6 +5,7 @@ import {
   Toolbar,
   Typography,
   styled,
+  Button,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React from "react";
@@ -32,12 +33,11 @@ const NavigationBar = () => {
 
             {/* Section Kanan */}
             <Grid item xs={6} align="right">
-              <Typography
-                className="textNavivationBar"
-                variant={isMobile ? "h5" : "h4"}
-              >
-                kanan
-              </Typography>
+              <Button>Button 1</Button>
+              <Button>Button 2</Button>
+              <Button>Button 3</Button>
+              <Button>Button 4</Button>
+              <Button>Button 5</Button>
             </Grid>
             {/* Akhir Code Section Kanan*/}
           </Grid>

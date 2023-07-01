@@ -11,7 +11,7 @@ const Role = () => {
       {/* Content Here */}
       <Grid item xs={18}>
         <Typography variant="h2" align="center">
-          Specialist
+          What I'm Do
         </Typography>
 
         <CardRole data={specialist} />
