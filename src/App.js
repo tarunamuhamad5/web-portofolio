@@ -1,12 +1,14 @@
-import { Typography } from "@mui/material";
-import About from "./components/About";
+import React from "react";
+import About from "./components/Home";
+import NavigationBar from "./components/NavigationBar";
+import Role from "./components/Role";
 
 function App() {
   return (
     <div>
-      <header>
-        <About />
-      </header>
+      <NavigationBar />
+      <About />
+      <Role />
     </div>
   );
 }

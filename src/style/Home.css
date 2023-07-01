@@ -1,0 +1,13 @@
+.PicturePorto {
+    width: 75%;
+    height: auto;
+    display: none;
+    border-radius: 10%;
+  }
+
+  
+  @media (min-width: 768px) {
+    .PicturePorto {
+      display: block;
+    }
+  }
