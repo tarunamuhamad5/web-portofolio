@@ -32,9 +32,9 @@ const Home = () => {
               <br />
               I'm Taruna!
             </Typography>
-            <Typography variant={isMobile ? "h6" : "h3"}>
-              Fresh Graduated Electrical Engineer from bandung institute of
-              technology{" "}
+            <Typography variant={isMobile ? "h6" : "h4"}>
+              Fresh Graduated Electrical Engineer from Bandung Institute of
+              Technology
             </Typography>
           </Grid>
           {/* End of Left Section */}

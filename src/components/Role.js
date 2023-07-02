@@ -6,7 +6,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import React from "react";
-import specialist from "../assets/database/specialist.json";
+import Specialist from "../assets/database/Specialist.json";
 import SwipeableViews from "react-swipeable-views";
 import CardRole from "./CardRole";
 import { useTheme } from "@mui/material/styles";
@@ -23,7 +23,7 @@ const Role = () => {
           What I'm Do
         </Typography>
 
-        <CardRole data={specialist} />
+        <CardRole data={Specialist} />
       </Grid>
       {/* Content End */}
       <Grid item xs={1}></Grid> {/* Grid Right */}

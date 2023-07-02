@@ -1,0 +1,22 @@
+[
+    {
+        "title":"BlueGuard",
+        "description":"Laboris consectetur cillum aute sunt voluptate exercitation cillum est. Ex in aliquip qui aliqua mollit laborum aliqua eu tempor. Ex ea laborum dolore esse enim deserunt ex officia sint dolor nostrud Lorem ex. Ut consequat magna proident ad consectetur dolore aliqua.",
+        "src_image":"./src/assets/images/BlueGuard.png"
+    },
+    {
+        "title":"Archi",
+        "description":"Laboris consectetur cillum aute sunt voluptate exercitation cillum est. Ex in aliquip qui aliqua mollit laborum aliqua eu tempor. Ex ea laborum dolore esse enim deserunt ex officia sint dolor nostrud Lorem ex. Ut consequat magna proident ad consectetur dolore aliqua.",
+        "src_image":"./assets/images/BlueGuard.png"
+    },
+    {
+        "title":"Cleaning Robot",
+        "description":"Laboris consectetur cillum aute sunt voluptate exercitation cillum est. Ex in aliquip qui aliqua mollit laborum aliqua eu tempor. Ex ea laborum dolore esse enim deserunt ex officia sint dolor nostrud Lorem ex. Ut consequat magna proident ad consectetur dolore aliqua.",
+        "src_image":"../assets/images/BlueGuard.png"
+    },
+    {
+        "title":"Calculate Distance with Camera",
+        "description":"Laboris consectetur cillum aute sunt voluptate exercitation cillum est. Ex in aliquip qui aliqua mollit laborum aliqua eu tempor. Ex ea laborum dolore esse enim deserunt ex officia sint dolor nostrud Lorem ex. Ut consequat magna proident ad consectetur dolore aliqua.",
+        "src_image":"src/assets/images/BlueGuard.png"
+    }
+]

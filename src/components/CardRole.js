@@ -16,26 +16,29 @@ const CardRole = ({ data }) => {
 
   const renderCardsMobile = () => {
     return (
-      <SwipeableViews enableMouseEvents>
+      <React.Fragment>
+
         {data.map((item, index) => (
-          <div key={index}>
+          <div>
             <Card
               key={index}
               sx={{
-                height: "30vh",
-                margin: "2%",
+                width: "auto",
+                margin: "1%",
+                mt: "20px"
               }}
             >
               <CardContent>
-                <Typography variant="h6">{item.title}</Typography>
-                <Typography variant="body2" mt={"10px"}>
+                <Typography variant="h4">{item.title}</Typography>
+                <Typography variant="body1" mt={"10px"}>
                   {item.body}
                 </Typography>
               </CardContent>
             </Card>
           </div>
         ))}
-      </SwipeableViews>
+      </React.Fragment>
+
     );
   };
 
@@ -46,13 +49,14 @@ const CardRole = ({ data }) => {
           <Card
             key={index}
             sx={{
-              height: "22vh",
-              margin: "2%",
+              height: "auto",
+              width: "40%",
+              margin: "1%",
             }}
           >
             <CardContent>
-              <Typography variant="h6">{item.title}</Typography>
-              <Typography variant="body2" mt={"10px"}>
+              <Typography variant="h5">{item.title}</Typography>
+              <Typography variant="body1" mt={"10px"}>
                 {item.body}
               </Typography>
             </CardContent>
