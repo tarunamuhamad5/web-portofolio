@@ -1,13 +1,6 @@
-import {
-  Card,
-  CardContent,
-  Grid,
-  Typography,
-  useMediaQuery,
-} from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import Specialist from "../assets/database/Specialist.json";
-import SwipeableViews from "react-swipeable-views";
 import CardRole from "./CardRole";
 import { useTheme } from "@mui/material/styles";
 

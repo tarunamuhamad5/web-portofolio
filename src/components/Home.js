@@ -1,14 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useTheme } from "@mui/material/styles";
-import {
-  useMediaQuery,
-  Typography,
-  Box,
-  Grid,
-  Avatar,
-  styled,
-} from "@mui/material";
-import PasFoto from "../assets/images/PasFoto.jpg";
+import { useMediaQuery, Typography, Box, Grid } from "@mui/material";
+import AboutPicture from "../assets/images/AboutPicture.jpg";
 import "../style/Home.css";
 
 const Home = () => {
@@ -41,7 +34,7 @@ const Home = () => {
 
           {/* Right Section */}
           <Grid item xs={isMobile ? 1 : 8} align="center">
-            <img className="PicturePorto" src={PasFoto}></img>
+            <img className="PicturePorto" src={AboutPicture} alt="" />
           </Grid>
           {/* End of Right Section */}
         </Grid>
