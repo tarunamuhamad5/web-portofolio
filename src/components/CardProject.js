@@ -24,8 +24,8 @@ const CardProject = ({ data }) => {
         >
           <Grid item xs={1}></Grid>
 
-          {/* Start Card Project */}
           <Grid item xs={18}>
+            {/* Start Card Project */}
             {data.map((item, index) => (
               <div key={index}>
                 <Card sx={{ height: "25vh", margin: "2%" }}>
@@ -54,8 +54,8 @@ const CardProject = ({ data }) => {
                 </Card>
               </div>
             ))}
+            {/* End Card Project */}
           </Grid>
-          {/* End Card Project */}
           <Grid item xs={1}></Grid>
         </Grid>
       </React.Fragment>
@@ -74,8 +74,8 @@ const CardProject = ({ data }) => {
         >
           <Grid item xs={1}></Grid>
 
-          {/* Start Card Project */}
           <Grid item xs={18}>
+            {/* Start Card Project */}
             {data.map((item, index) => (
               <div>
                 <Card key={index} sx={{ width: "auto", margin: "2%" }}>
@@ -98,8 +98,8 @@ const CardProject = ({ data }) => {
                 </Card>
               </div>
             ))}
+            {/* End Card Project */}
           </Grid>
-          {/* End Card Project */}
           <Grid item xs={1}></Grid>
         </Grid>
       </React.Fragment>

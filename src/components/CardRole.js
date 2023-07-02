@@ -17,7 +17,6 @@ const CardRole = ({ data }) => {
   const renderCardsMobile = () => {
     return (
       <React.Fragment>
-
         {data.map((item, index) => (
           <div>
             <Card
@@ -25,7 +24,7 @@ const CardRole = ({ data }) => {
               sx={{
                 width: "auto",
                 margin: "1%",
-                mt: "20px"
+                mt: "20px",
               }}
             >
               <CardContent>
@@ -38,7 +37,6 @@ const CardRole = ({ data }) => {
           </div>
         ))}
       </React.Fragment>
-
     );
   };
 
@@ -55,7 +53,9 @@ const CardRole = ({ data }) => {
             }}
           >
             <CardContent>
-              <Typography variant="h5">{item.title}</Typography>
+              <Typography variant="h5" align="center">
+                {item.title}
+              </Typography>
               <Typography variant="body1" mt={"10px"}>
                 {item.body}
               </Typography>
