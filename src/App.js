@@ -2,14 +2,24 @@ import React from "react";
 import About from "./components/Home";
 import NavigationBar from "./components/NavigationBar";
 import Role from "./components/Role";
+import FeaturedProject from "./components/FeaturedProject.js";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <NavigationBar />
-      <About />
-      <Role />
-    </div>
+      {/* Content */}
+      <div id="About Section">
+        <About />
+      </div>
+      <div id="Role Section">
+        <Role />
+      </div>
+      <div>
+        <FeaturedProject />
+      </div>
+      {/* End of Content */}
+    </React.Fragment>
   );
 }
 

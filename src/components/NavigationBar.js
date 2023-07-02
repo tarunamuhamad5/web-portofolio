@@ -15,13 +15,21 @@ const NavigationBar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <React.Fragment>
       <AppBar position="fixed" elevation={1}>
         <Toolbar className="NavigationBar">
-          <Grid container>
+          <Grid container columns={20}>
             {/* Section Kiri */}
-            <Grid item xs={6} align="left">
+            <Grid item xs={3} align="left">
               <Typography
                 className="textNavivationBar"
                 variant={isMobile ? "h5" : "h4"}
@@ -32,12 +40,21 @@ const NavigationBar = () => {
             {/* Akhir Code Section Kiri*/}
 
             {/* Section Kanan */}
-            <Grid item xs={6} align="right">
-              <Button>Button 1</Button>
-              <Button>Button 2</Button>
-              <Button>Button 3</Button>
-              <Button>Button 4</Button>
-              <Button>Button 5</Button>
+            <Grid item xs={17} align="right">
+              <Button
+                variant="elevated"
+                sx={{ color: "black" }}
+                onClick={() => scrollToSection("About Section")}
+              >
+                About
+              </Button>
+              <Button
+                variant="elevated"
+                sx={{ color: "black" }}
+                onClick={() => scrollToSection("Role Section")}
+              >
+                Role
+              </Button>
             </Grid>
             {/* Akhir Code Section Kanan*/}
           </Grid>
