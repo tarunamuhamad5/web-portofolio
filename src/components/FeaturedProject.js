@@ -2,7 +2,7 @@ import { useTheme } from "@mui/material/styles";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import CardProject from "./CardProject";
-import FeaturedProjectData from "../assets/database/FeaturedProjectData.json"
+import FeaturedProjectData from "../assets/database/FeaturedProjectData.json";
 
 const FeaturedProject = () => {
   const theme = useTheme();

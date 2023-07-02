@@ -1,19 +1,10 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
-import {
-  useMediaQuery,
-  Typography,
-  Card,
-  CardContent,
-  CardActions,
-  Button,
-} from "@mui/material";
-import SwipeableViews from "react-swipeable-views";
+import { useMediaQuery, Typography, Card, CardContent } from "@mui/material";
 
 const CardRole = ({ data }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   const renderCardsMobile = () => {
     return (
       <React.Fragment>
