@@ -15,7 +15,7 @@ function App() {
       <div id="Role Section">
         <Role />
       </div>
-      <div>
+      <div id="Projects Section">
         <FeaturedProject />
       </div>
       {/* End of Content */}

@@ -1,4 +1,5 @@
 import {
+  Box,
   Card,
   CardContent,
   Grid,
@@ -31,17 +32,20 @@ const CardProject = ({ data }) => {
                 <Card sx={{ height: "25vh", margin: "2%" }}>
                   <CardContent height={"100%"}>
                     <Grid container columns={20} alignItems={"strech"}>
-                      <Grid item xs={10} align="center">
-                        <div height={"auto"}>
-                          <img
-                            height={"200px"}
-                            alt={item.title}
-                            src={require(`../assets/images/${item.src_image}`)}
-                          />
-                        </div>
+                      <Grid item xs={8} align="center">
+                        <Box background>
+                          <div height={"auto"}>
+                            <img
+                              height={"225px"}
+                              alt={item.title}
+                              src={require(`../assets/images/${item.src_image}`)}
+                              style={{ borderRadius: "3%" }}
+                            />
+                          </div>
+                        </Box>
                       </Grid>
 
-                      <Grid item xs={10}>
+                      <Grid item xs={12}>
                         <Typography variant="h4" align="center">
                           {item.title}
                         </Typography>
@@ -82,7 +86,12 @@ const CardProject = ({ data }) => {
                   <CardContent height={"100%"}>
                     <Grid container direction={"column"} alignItems={"strech"}>
                       <Grid item xs={10} align="center">
-                        <img width={"100%"} alt={item.title} src={item.title} />
+                        <img
+                          width={"100%"}
+                          alt={item.title}
+                          src={require(`../assets/images/${item.src_image}`)}
+                          style={{ borderRadius: "3%" }}
+                        />
                       </Grid>
 
                       <Grid item xs={10} mt={"2rem"}>

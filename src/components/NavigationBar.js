@@ -55,6 +55,13 @@ const NavigationBar = () => {
               >
                 Role
               </Button>
+              <Button
+                variant="elevated"
+                sx={{ color: "black" }}
+                onClick={() => scrollToSection("Projects Section")}
+              >
+                Projects
+              </Button>
             </Grid>
             {/* Akhir Code Section Kanan*/}
           </Grid>

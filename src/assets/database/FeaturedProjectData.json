@@ -1,13 +1,13 @@
 [
   {
     "title": "BlueGuard",
-    "description": "Laboris consectetur cillum aute sunt voluptate exercitation cillum est. Ex in aliquip qui aliqua mollit laborum aliqua eu tempor. Ex ea laborum dolore esse enim deserunt ex officia sint dolor nostrud Lorem ex. Ut consequat magna proident ad consectetur dolore aliqua.",
+    "description": "BlueGuard is an access control system based on Bluetooth low energy. The BlueGuard system consists of four subsystems: the key device, the lock device, the server, and the admin panel.",
     "src_image": "FeaturedProject/BlueGuard.png"
   },
   {
     "title": "Archi",
     "description": "Laboris consectetur cillum aute sunt voluptate exercitation cillum est. Ex in aliquip qui aliqua mollit laborum aliqua eu tempor. Ex ea laborum dolore esse enim deserunt ex officia sint dolor nostrud Lorem ex. Ut consequat magna proident ad consectetur dolore aliqua.",
-    "src_image": "FeaturedProject/BlueGuard.png"
+    "src_image": "FeaturedProject/Archi.png"
   },
   {
     "title": "Cleaning Robot",
