@@ -9,7 +9,7 @@ const FeaturedProject = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div>
-      <Box height={"50vh"} mt={isMobile ? "2rem" : "1rem"}>
+      <Box height={"auto"} mt={isMobile ? "2rem" : "1rem"}>
         <Typography variant={isMobile ? "h3" : "h2"} align="center">
           Featured Projects
         </Typography>

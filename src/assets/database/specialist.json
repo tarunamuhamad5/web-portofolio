@@ -1,18 +1,22 @@
 [
   {
     "title": "IoT Engineer",
-    "body": "Design and Implementing Firmware; Design and Implementing Printed Circuit Board"
+    "body": "Design and Implementation embedded system to solve problem using IoT tools",
+    "src_image": "RoleIcon/IoT.png"
   },
   {
-    "title": "Control Engineer",
-    "body": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+    "title": "Robotics Engineer",
+    "body": "Design and Implementation a robots meet the specifications.",
+    "src_image": "RoleIcon/Robotics.png"
   },
   {
     "title": "Data Scientist",
-    "body": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+    "body": "Deep Analysis data to gain knowledge for business purposes",
+    "src_image": "RoleIcon/DataScientist.png"
   },
   {
     "title": "Full-Stack Developer",
-    "body": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+    "body": "Develop an App that meet the specifications.",
+    "src_image": "RoleIcon/Developer.png"
   }
 ]

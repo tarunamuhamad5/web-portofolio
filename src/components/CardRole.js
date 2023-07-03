@@ -12,6 +12,7 @@ const CardRole = ({ data }) => {
           <div>
             <Card
               key={index}
+              variant="naked"
               sx={{
                 width: "auto",
                 margin: "1%",
@@ -19,8 +20,17 @@ const CardRole = ({ data }) => {
               }}
             >
               <CardContent>
-                <Typography variant="h4">{item.title}</Typography>
-                <Typography variant="body1" mt={"10px"}>
+                <div align="center">
+                  <img
+                    height={"225px"}
+                    alt={item.title}
+                    src={require(`../assets/images/${item.src_image}`)}
+                  />
+                </div>
+                <Typography variant="h4" align="center" mt={"1rem"}>
+                  {item.title}
+                </Typography>
+                <Typography variant="body1" mt={"5px"}>
                   {item.body}
                 </Typography>
               </CardContent>
@@ -37,6 +47,7 @@ const CardRole = ({ data }) => {
         {data.map((item, index) => (
           <Card
             key={index}
+            variant="naked"
             sx={{
               height: "auto",
               width: "40%",
@@ -44,6 +55,13 @@ const CardRole = ({ data }) => {
             }}
           >
             <CardContent>
+              <div align="center">
+                <img
+                  height={"225px"}
+                  alt={item.title}
+                  src={require(`../assets/images/${item.src_image}`)}
+                />
+              </div>
               <Typography variant="h5" align="center">
                 {item.title}
               </Typography>
