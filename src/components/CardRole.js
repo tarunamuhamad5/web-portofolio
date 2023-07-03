@@ -22,7 +22,7 @@ const CardRole = ({ data }) => {
               <CardContent>
                 <div align="center">
                   <img
-                    height={"225px"}
+                    height={"160px"}
                     alt={item.title}
                     src={require(`../assets/images/${item.src_image}`)}
                   />
