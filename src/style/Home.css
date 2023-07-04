@@ -1,13 +1,19 @@
 .PicturePorto {
-    width: 75%;
-    height: auto;
-    display: none;
-    border-radius: 10%;
-  }
+  width: 75%;
+  height: auto;
+  display: none;
+  border-radius: 10%;
+}
 
-  
-  @media (min-width: 768px) {
-    .PicturePorto {
-      display: block;
-    }
+.HomePagesDesktop {
+  background-image: url(/src/assets/images/Introduction2.png);
+  background-size: cover;
+}
+.HomePagesMobile {
+}
+
+@media (min-width: 768px) {
+  .PicturePorto {
+    display: block;
   }
+}

@@ -16,32 +16,24 @@ const CardProject = ({ data }) => {
   const CardProjectDesktop = () => {
     return (
       <React.Fragment>
-        <Grid
-          container
-          columns={20}
-          alignItems={"center"}
-          height={"auto"}
-          width={"100%"}
-        >
-          <Grid item xs={3}></Grid>
+        <Grid container columns={20} alignItems={"center"} height={"auto"}>
+          <Grid item xs={2}></Grid>
 
-          <Grid item xs={14}>
+          <Grid item xs={16}>
             {/* Start Card Project */}
             {data.map((item, index) => (
               <div key={index}>
-                <Card sx={{ height: "25vh", margin: "2%" }}>
+                <Card sx={{ margin: "4%" }}>
                   <CardContent height={"100%"}>
                     <Grid container columns={20} alignItems={"strech"}>
                       <Grid item xs={7} align="center">
                         <Box background>
-                          <div height={"auto"}>
-                            <img
-                              height={"225px"}
-                              alt={item.title}
-                              src={require(`../assets/images/${item.src_image}`)}
-                              style={{ borderRadius: "3%" }}
-                            />
-                          </div>
+                          <img
+                            height={"200px"}
+                            alt={item.title}
+                            src={require(`../assets/images/${item.src_image}`)}
+                            style={{ borderRadius: "3%" }}
+                          />
                         </Box>
                       </Grid>
 
@@ -60,7 +52,7 @@ const CardProject = ({ data }) => {
             ))}
             {/* End Card Project */}
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={2}></Grid>
         </Grid>
       </React.Fragment>
     );

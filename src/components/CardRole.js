@@ -27,12 +27,14 @@ const CardRole = ({ data }) => {
                     src={require(`../assets/images/${item.src_image}`)}
                   />
                 </div>
-                <Typography variant="h4" align="center" mt={"1rem"}>
-                  {item.title}
-                </Typography>
-                <Typography variant="body1" mt={"5px"}>
-                  {item.body}
-                </Typography>
+                <div>
+                  <Typography variant="h4" align="center" mt={"1rem"}>
+                    {item.title}
+                  </Typography>
+                  <Typography variant="body1" mt={"5px"}>
+                    {item.body}
+                  </Typography>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -62,12 +64,14 @@ const CardRole = ({ data }) => {
                   src={require(`../assets/images/${item.src_image}`)}
                 />
               </div>
-              <Typography variant="h5" align="center">
-                {item.title}
-              </Typography>
-              <Typography variant="body1" mt={"10px"}>
-                {item.body}
-              </Typography>
+              <div>
+                <Typography variant="h5" align="center">
+                  {item.title}
+                </Typography>
+                <Typography variant="body1" mt={"10px"}>
+                  {item.body}
+                </Typography>
+              </div>
             </CardContent>
           </Card>
         ))}
