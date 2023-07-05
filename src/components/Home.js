@@ -9,7 +9,7 @@ const Home = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <div className={isMobile ? "HomePagesMobile" : "HomePagesDesktop"}>
+    <div>
       <Box sx={{ height: "95vh" }}>
         <Grid
           container
@@ -19,33 +19,23 @@ const Home = () => {
         >
           <Grid item xs={1}></Grid>
           {/* Left Section */}
-          <Grid item xs={isMobile ? 1 : 8} align="center"></Grid>
-          {/* End of Right Section */}
-          <Grid
-            item
-            xs={isMobile ? 18 : 10}
-            align={isMobile ? "left" : "right"}
-          >
-            <Typography
-              variant={isMobile ? "h2" : "h1"}
-              color={isMobile ? "black" : "white"}
-            >
+
+          <Grid item xs={isMobile ? 18 : 10}>
+            <Typography variant={isMobile ? "h2" : "h1"}>
               Hello,
               <br />
               I'm Taruna!
             </Typography>
-            <Typography
-              variant={isMobile ? "h6" : "h4"}
-              align={isMobile ? "left" : "right"}
-              color={isMobile ? "black" : "white"}
-            >
+            <Typography variant={isMobile ? "h7" : "h4"}>
               Fresh Graduated Electrical Engineer from
               <br />
               Bandung Institute of Technology
             </Typography>
           </Grid>
-          {/* End of Left Section */}
+          {/* End of Right Section */}
 
+          {/* End of Left Section */}
+          <Grid item xs={isMobile ? 1 : 8} align="center"></Grid>
           {/* Right Section */}
         </Grid>
       </Box>

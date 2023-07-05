@@ -1,44 +1,55 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
-import { useMediaQuery, Typography, Card, CardContent } from "@mui/material";
+import {
+  useMediaQuery,
+  Typography,
+  Card,
+  CardContent,
+  Button,
+  Grid,
+} from "@mui/material";
+import SwipeableViews from "react-swipeable-views";
 
 const CardRole = ({ data }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   const renderCardsMobile = () => {
     return (
       <React.Fragment>
-        {data.map((item, index) => (
-          <div>
-            <Card
-              key={index}
-              variant="naked"
-              sx={{
-                width: "auto",
-                margin: "1%",
-                mt: "20px",
-              }}
-            >
-              <CardContent>
-                <div align="center">
-                  <img
-                    height={"160px"}
-                    alt={item.title}
-                    src={require(`../assets/images/${item.src_image}`)}
-                  />
-                </div>
-                <div>
-                  <Typography variant="h4" align="center" mt={"1rem"}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="body1" mt={"5px"}>
-                    {item.body}
-                  </Typography>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        ))}
+        <SwipeableViews enableMouseEvents>
+          {data.map((item, index) => (
+            <div>
+              <Card
+                key={index}
+                variant="naked"
+                sx={{
+                  width: "auto",
+                  margin: "1%",
+                  mt: "20px",
+                }}
+              >
+                <CardContent>
+                  <div align="center">
+                    <img
+                      height={"160px"}
+                      alt={item.title}
+                      src={require(`../assets/images/${item.src_image}`)}
+                    />
+                  </div>
+                  <div>
+                    <Typography variant="h4" align="center" mt={"1rem"}>
+                      {item.title}
+                    </Typography>
+                    <Typography variant="body1" mt={"5px"}>
+                      {item.body}
+                    </Typography>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </SwipeableViews>
       </React.Fragment>
     );
   };
