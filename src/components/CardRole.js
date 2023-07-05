@@ -9,15 +9,17 @@ import {
   Grid,
 } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
 
 const CardRole = ({ data }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
   const renderCardsMobile = () => {
     return (
       <React.Fragment>
-        <SwipeableViews enableMouseEvents>
+        <AutoPlaySwipeableViews enableMouseEvents interval={1500}>
           {data.map((item, index) => (
             <div>
               <Card
@@ -49,7 +51,7 @@ const CardRole = ({ data }) => {
               </Card>
             </div>
           ))}
-        </SwipeableViews>
+        </AutoPlaySwipeableViews>
       </React.Fragment>
     );
   };

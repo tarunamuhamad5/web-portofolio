@@ -27,7 +27,7 @@ const Home = () => {
               I'm Taruna!
             </Typography>
             <Typography variant={isMobile ? "h7" : "h4"}>
-              Fresh Graduated Electrical Engineer from
+              Electrical Engineer Fresh Graduate from
               <br />
               Bandung Institute of Technology
             </Typography>
