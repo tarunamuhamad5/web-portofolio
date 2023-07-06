@@ -1,7 +1,8 @@
-import { Box, Typography, useMediaQuery } from "@mui/material";
+import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 import WordFromCoWorkers from "../assets/database/WordFromCoWorkers.json";
+import CardWords from "./CardWords";
 
 const WordsCoWorkers = () => {
   const theme = useTheme();
@@ -16,6 +17,7 @@ const WordsCoWorkers = () => {
         >
           Words From My Co-Workers
         </Typography>
+        <CardWords data={WordFromCoWorkers} />
       </Box>
     </div>
   );
