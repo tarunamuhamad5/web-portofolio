@@ -4,8 +4,22 @@ import NavigationBar from "./components/NavigationBar";
 import Role from "./components/Role";
 import FeaturedProject from "./components/FeaturedProject.js";
 import WordsCoWorkers from "./components/WordsCoWorkers";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  });
+
   return (
     <React.Fragment>
       <NavigationBar />

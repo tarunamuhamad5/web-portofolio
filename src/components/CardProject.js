@@ -6,7 +6,7 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
 
 const CardProject = ({ data }) => {
@@ -25,19 +25,26 @@ const CardProject = ({ data }) => {
               <div key={index}>
                 <Card sx={{ margin: "4%" }}>
                   <CardContent height={"100%"}>
-                    <Grid container columns={20} alignItems={"strech"}>
+                    <Grid
+                      container
+                      columns={20}
+                      alignItems={"center"}
+                      justifyItems={"center"}
+                    >
                       <Grid item xs={7} align="center">
-                        <Box background>
+                        <Box>
                           <img
-                            height={"200px"}
+                            height={"175px"}
                             alt={item.title}
                             src={require(`../assets/images/${item.src_image}`)}
-                            style={{ borderRadius: "3%" }}
+                            style={{
+                              borderRadius: "3%",
+                            }}
                           />
                         </Box>
                       </Grid>
 
-                      <Grid item xs={13}>
+                      <Grid item xs>
                         <Typography variant="h4" align="center">
                           {item.title}
                         </Typography>
