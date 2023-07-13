@@ -31,10 +31,10 @@ const CardProject = ({ data }) => {
                       alignItems={"center"}
                       justifyItems={"center"}
                     >
-                      <Grid item xs={7} align="center">
+                      <Grid item xs align="center">
                         <Box>
                           <img
-                            height={"175px"}
+                            height={"200px"}
                             alt={item.title}
                             src={require(`../assets/images/${item.src_image}`)}
                             style={{
@@ -84,7 +84,7 @@ const CardProject = ({ data }) => {
                 <Card key={index} sx={{ width: "auto", margin: "2%" }}>
                   <CardContent height={"100%"}>
                     <Grid container direction={"column"} alignItems={"strech"}>
-                      <Grid item xs={10} align="center">
+                      <Grid item xs align="center">
                         <img
                           width={"100%"}
                           alt={item.title}
@@ -93,7 +93,7 @@ const CardProject = ({ data }) => {
                         />
                       </Grid>
 
-                      <Grid item xs={10} mt={"2rem"}>
+                      <Grid item xs mt={"2rem"}>
                         <Typography variant="h4" align="center">
                           {item.title}
                         </Typography>

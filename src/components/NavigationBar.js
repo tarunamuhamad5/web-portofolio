@@ -40,7 +40,7 @@ const NavigationBar = () => {
             {/* Akhir Code Section Kiri*/}
 
             {/* Section Kanan */}
-            <Grid item xs={17} align="right">
+            <Grid item xs align="right">
               <Button
                 variant="elevated"
                 sx={{ color: "black" }}
