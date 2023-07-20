@@ -18,9 +18,11 @@ const NavigationBar = () => {
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    const scrollPosition = element.offsetTop - 40; // Adjust the value as needed
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -29,14 +31,7 @@ const NavigationBar = () => {
         <Toolbar className="NavigationBar">
           <Grid container columns={20}>
             {/* Section Kiri */}
-            <Grid item xs={3} align="left">
-              <Typography
-                className="textNavivationBar"
-                variant={isMobile ? "h5" : "h4"}
-              >
-                kiri
-              </Typography>
-            </Grid>
+            <Grid item xs={3} align="left"></Grid>
             {/* Akhir Code Section Kiri*/}
 
             {/* Section Kanan */}
@@ -51,16 +46,16 @@ const NavigationBar = () => {
               <Button
                 variant="elevated"
                 sx={{ color: "black" }}
-                onClick={() => scrollToSection("Role Section")}
+                onClick={() => scrollToSection("Projects Section")}
               >
-                Role
+                Projects
               </Button>
               <Button
                 variant="elevated"
                 sx={{ color: "black" }}
-                onClick={() => scrollToSection("Projects Section")}
+                onClick={() => scrollToSection("ContactMe")}
               >
-                Projects
+                Contact
               </Button>
             </Grid>
             {/* Akhir Code Section Kanan*/}

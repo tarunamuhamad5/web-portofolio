@@ -1,12 +1,16 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
-import { useMediaQuery, Typography, Box, Grid } from "@mui/material";
+import { useMediaQuery, Typography, Box, Grid, Button } from "@mui/material";
 import Introduction from "../assets/images/Introduction.png";
 import "../style/Home.css";
 
 const Home = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const openCv = () => {
+    window.open("https://www.youtube.com", "_blank");
+  };
 
   return (
     <div>
@@ -31,6 +35,18 @@ const Home = () => {
               <br />
               Bandung Institute of Technology
             </Typography>
+            <Button
+              size={isMobile ? "medium" : "large"}
+              variant="outlined"
+              style={{
+                color: "black",
+                borderColor: "black",
+                marginTop: "1rem",
+              }}
+              onClick={openCv}
+            >
+              Check out my CV
+            </Button>
           </Grid>
           {/* End of Right Section */}
 

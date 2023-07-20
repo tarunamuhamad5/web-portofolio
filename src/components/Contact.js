@@ -1,4 +1,4 @@
-import { Typography, useMediaQuery } from "@mui/material";
+import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 
@@ -8,7 +8,11 @@ const Contact = () => {
 
   return (
     <React.Fragment>
-      <Typography variant="h2" align="center">
+      <Typography
+        variant={isMobile ? "h3" : "h2"}
+        align="center"
+        mt={isMobile ? "1rem" : "1rem"}
+      >
         Contact Me
       </Typography>
     </React.Fragment>

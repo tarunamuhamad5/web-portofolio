@@ -81,7 +81,7 @@ const CardRole = ({ data }) => {
                 <Typography variant="h5" align="center">
                   {item.title}
                 </Typography>
-                <Typography variant="body1" mt={"10px"}>
+                <Typography variant="body1" mt={"10px"} align="center">
                   {item.body}
                 </Typography>
               </div>

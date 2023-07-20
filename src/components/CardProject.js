@@ -34,7 +34,7 @@ const CardProject = ({ data }) => {
                       <Grid item xs align="center">
                         <Box>
                           <img
-                            height={"200px"}
+                            height={"225px"}
                             alt={item.title}
                             src={require(`../assets/images/${item.src_image}`)}
                             style={{

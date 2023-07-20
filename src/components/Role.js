@@ -15,7 +15,7 @@ const Role = () => {
       <Grid container columns={20}>
         <Grid item xs={1}></Grid> {/* Grid Left */}
         {/* Content Here */}
-        <Grid item xs={18}>
+        <Grid item xs>
           <CardRole data={Specialist} />
         </Grid>
         {/* Content End */}

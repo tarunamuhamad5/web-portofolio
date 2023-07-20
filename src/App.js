@@ -5,22 +5,8 @@ import Role from "./components/Role";
 import FeaturedProject from "./components/FeaturedProject.js";
 import WordsCoWorkers from "./components/WordsCoWorkers";
 import Contact from "./components/Contact";
-import { useState, useEffect } from "react";
 
 function App() {
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowHeight(window.innerHeight);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  });
-
   return (
     <React.Fragment>
       <NavigationBar />
@@ -37,7 +23,7 @@ function App() {
       <div id="Words From CoWorkers Section">
         <WordsCoWorkers />
       </div>
-      <div>
+      <div id="ContactMe">
         <Contact />
       </div>
       {/* End of Content */}

@@ -30,12 +30,12 @@ const CardWords = ({ data }) => {
             >
               <CardContent>
                 <div align="center">
-                  <Typography variant={isMobile ? "h4" : "h3"}>
+                  <Typography variant={isMobile ? "h5" : "h4"}>
                     {item.name}
                   </Typography>
                   <Typography
                     mt={"1rem"}
-                    variant={isMobile ? "body2" : "body1"}
+                    variant={isMobile ? "body2" : "body2"}
                   >
                     {item.message}
                   </Typography>
