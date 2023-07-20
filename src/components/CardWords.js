@@ -29,8 +29,8 @@ const CardWords = ({ data }) => {
               }}
             >
               <CardContent>
-                <div align="center">
-                  <Typography variant={isMobile ? "h5" : "h4"}>
+                <div>
+                  <Typography variant={isMobile ? "h5" : "h4"} align="center">
                     {item.name}
                   </Typography>
                   <Typography

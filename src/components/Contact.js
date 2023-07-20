@@ -12,6 +12,7 @@ const Contact = () => {
         variant={isMobile ? "h3" : "h2"}
         align="center"
         mt={isMobile ? "1rem" : "1rem"}
+        color={"white"}
       >
         Contact Me
       </Typography>

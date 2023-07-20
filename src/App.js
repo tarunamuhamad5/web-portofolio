@@ -17,13 +17,13 @@ function App() {
       <div id="Role Section">
         <Role />
       </div>
-      <div id="Projects Section">
+      <div id="Projects Section" style={{ backgroundColor: "#FAF8F7" }}>
         <FeaturedProject />
       </div>
       <div id="Words From CoWorkers Section">
         <WordsCoWorkers />
       </div>
-      <div id="ContactMe">
+      <div id="ContactMe" style={{ backgroundColor: "#141414" }}>
         <Contact />
       </div>
       {/* End of Content */}
