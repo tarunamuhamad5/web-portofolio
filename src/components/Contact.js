@@ -1,4 +1,4 @@
-import { Box, Card, Typography, useMediaQuery } from "@mui/material";
+import { Box, Card, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 
@@ -12,10 +12,15 @@ const Contact = () => {
         variant={isMobile ? "h3" : "h2"}
         align="center"
         mt={isMobile ? "1rem" : "1rem"}
-        color={"white"}
       >
         Contact Me
       </Typography>
+
+      <Grid container columns={20}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs></Grid>
+        <Grid item xs={1}></Grid>
+      </Grid>
     </React.Fragment>
   );
 };

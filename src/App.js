@@ -11,7 +11,7 @@ function App() {
     <React.Fragment>
       <NavigationBar />
       {/* Content */}
-      <div id="About Section">
+      <div id="About Section" >
         <About />
       </div>
       <div id="Role Section">
@@ -23,7 +23,7 @@ function App() {
       <div id="Words From CoWorkers Section">
         <WordsCoWorkers />
       </div>
-      <div id="ContactMe" style={{ backgroundColor: "#141414" }}>
+      <div id="ContactMe">
         <Contact />
       </div>
       {/* End of Content */}

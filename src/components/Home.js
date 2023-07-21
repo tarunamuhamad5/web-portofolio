@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div>
-      <Box sx={{ height: "95vh" }}>
+      <Box sx={{ height: "90vh" }}>
         <Grid
           container
           columns={20}
@@ -24,7 +24,7 @@ const Home = () => {
           <Grid item xs={1}></Grid>
           {/* Left Section */}
 
-          <Grid item xs={isMobile ? 18 : 10}>
+          <Grid item xs={isMobile ? 18 : 18}>
             <Typography variant={isMobile ? "h2" : "h1"}>
               Hello,
               <br />
@@ -48,10 +48,9 @@ const Home = () => {
               Check out my CV
             </Button>
           </Grid>
-          {/* End of Right Section */}
 
           {/* End of Left Section */}
-          <Grid item xs={isMobile ? 1 : 8} align="center"></Grid>
+          <Grid item xs={isMobile ? 1 : 1} align="center"></Grid>
           {/* Right Section */}
         </Grid>
       </Box>
