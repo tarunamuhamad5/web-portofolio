@@ -1,6 +1,8 @@
-import { Box, Card, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
+import Contactdata from "../assets/database/ContactData.json";
 import { useTheme } from "@mui/material/styles";
+import CardContact from "./CardContact";
 
 const Contact = () => {
   const theme = useTheme();
@@ -18,7 +20,9 @@ const Contact = () => {
 
       <Grid container columns={20}>
         <Grid item xs={1}></Grid>
-        <Grid item xs></Grid>
+        <Grid item xs>
+          <CardContact data={Contactdata} />
+        </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
     </React.Fragment>

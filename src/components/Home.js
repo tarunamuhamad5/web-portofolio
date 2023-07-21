@@ -1,7 +1,6 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 import { useMediaQuery, Typography, Box, Grid, Button } from "@mui/material";
-import Introduction from "../assets/images/Introduction.png";
 import "../style/Home.css";
 
 const Home = () => {
