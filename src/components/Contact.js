@@ -19,11 +19,11 @@ const Contact = () => {
       </Typography>
 
       <Grid container columns={20}>
-        <Grid item xs={1}></Grid>
+        <Grid item xs={isMobile ? "1" : "4"}></Grid>
         <Grid item xs>
           <CardContact data={Contactdata} />
         </Grid>
-        <Grid item xs={1}></Grid>
+        <Grid item xs={isMobile ? "1" : "4"}></Grid>
       </Grid>
     </React.Fragment>
   );
