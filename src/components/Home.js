@@ -8,7 +8,10 @@ const Home = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const openCv = () => {
-    window.open("https://www.youtube.com", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/1-m6pugGY4r2gs0so9LBgEVjFDtVHW21G/view?usp=sharing",
+      "_blank"
+    );
   };
 
   return (
