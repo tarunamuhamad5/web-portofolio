@@ -9,7 +9,7 @@ const Role = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <React.Fragment>
-      <Typography variant={isMobile ? "h3" : "h2"} align="center">
+      <Typography variant={isMobile ? "h3" : "h2"} align="center" mt="1.5rem">
         What I Do
       </Typography>
       <Grid container columns={20}>

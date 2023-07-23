@@ -1,12 +1,12 @@
 [
   {
     "title": "IoT Engineer",
-    "body": "Design and Implementation embedded system to solve problem using IoT tools",
+    "body": "Developing an embedded system to solve problems.",
     "src_image": "RoleIcon/IoT.png"
   },
   {
     "title": "Robotics Engineer",
-    "body": "Design and Implementation a robots meet the specifications.",
+    "body": "Developing a robot to automate tasks",
     "src_image": "RoleIcon/Robotics.png"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "title": "Full-Stack Developer",
-    "body": "Develop an App that meet the specifications.",
+    "body": "Developing an application to meet user needs.",
     "src_image": "RoleIcon/Developer.png"
   }
 ]
