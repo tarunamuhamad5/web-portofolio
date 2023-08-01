@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.81379903.css",
-    "main.js": "/static/js/main.e955c135.js",
-    "static/js/787.a13be3ec.chunk.js": "/static/js/787.a13be3ec.chunk.js",
-    "static/media/CleaningRobots.png": "/static/media/CleaningRobots.d5bbc809c965ec171650.png",
-    "static/media/Archi.png": "/static/media/Archi.f0ab96359ddad83b4feb.png",
-    "static/media/BlueGuard.png": "/static/media/BlueGuard.62281d65455e6bc39cef.png",
-    "static/media/AboutPicture.jpg": "/static/media/AboutPicture.ea5026dbbaa9dee90225.jpg",
-    "static/media/Email.png": "/static/media/Email.74f4984e1ce96af41be4.png",
-    "static/media/DistanceCamera.png": "/static/media/DistanceCamera.cb11d8d15db77e00ca73.png",
-    "static/media/WA.png": "/static/media/WA.0751fad9932f8e28855b.png",
-    "static/media/Linkedin.png": "/static/media/Linkedin.b946d71534977e3c2c80.png",
-    "static/media/DataScientist.png": "/static/media/DataScientist.ec6c56e22032a2a4142f.png",
-    "static/media/IoT.png": "/static/media/IoT.3396016b289693781d72.png",
-    "static/media/Developer.png": "/static/media/Developer.b0dba7cd7b196b52a274.png",
-    "static/media/Robotics.png": "/static/media/Robotics.12ca40361df448aa651c.png",
-    "index.html": "/index.html",
-    "main.81379903.css.map": "/static/css/main.81379903.css.map",
-    "main.e955c135.js.map": "/static/js/main.e955c135.js.map",
-    "787.a13be3ec.chunk.js.map": "/static/js/787.a13be3ec.chunk.js.map"
+    "main.css": "/muhamad-taruna.cloud/static/css/main.81379903.css",
+    "main.js": "/muhamad-taruna.cloud/static/js/main.260ec38e.js",
+    "static/js/787.a13be3ec.chunk.js": "/muhamad-taruna.cloud/static/js/787.a13be3ec.chunk.js",
+    "static/media/CleaningRobots.png": "/muhamad-taruna.cloud/static/media/CleaningRobots.d5bbc809c965ec171650.png",
+    "static/media/Archi.png": "/muhamad-taruna.cloud/static/media/Archi.f0ab96359ddad83b4feb.png",
+    "static/media/BlueGuard.png": "/muhamad-taruna.cloud/static/media/BlueGuard.62281d65455e6bc39cef.png",
+    "static/media/AboutPicture.jpg": "/muhamad-taruna.cloud/static/media/AboutPicture.ea5026dbbaa9dee90225.jpg",
+    "static/media/Email.png": "/muhamad-taruna.cloud/static/media/Email.74f4984e1ce96af41be4.png",
+    "static/media/DistanceCamera.png": "/muhamad-taruna.cloud/static/media/DistanceCamera.cb11d8d15db77e00ca73.png",
+    "static/media/WA.png": "/muhamad-taruna.cloud/static/media/WA.0751fad9932f8e28855b.png",
+    "static/media/Linkedin.png": "/muhamad-taruna.cloud/static/media/Linkedin.b946d71534977e3c2c80.png",
+    "static/media/DataScientist.png": "/muhamad-taruna.cloud/static/media/DataScientist.ec6c56e22032a2a4142f.png",
+    "static/media/IoT.png": "/muhamad-taruna.cloud/static/media/IoT.3396016b289693781d72.png",
+    "static/media/Developer.png": "/muhamad-taruna.cloud/static/media/Developer.b0dba7cd7b196b52a274.png",
+    "static/media/Robotics.png": "/muhamad-taruna.cloud/static/media/Robotics.12ca40361df448aa651c.png",
+    "index.html": "/muhamad-taruna.cloud/index.html",
+    "main.81379903.css.map": "/muhamad-taruna.cloud/static/css/main.81379903.css.map",
+    "main.260ec38e.js.map": "/muhamad-taruna.cloud/static/js/main.260ec38e.js.map",
+    "787.a13be3ec.chunk.js.map": "/muhamad-taruna.cloud/static/js/787.a13be3ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81379903.css",
-    "static/js/main.e955c135.js"
+    "static/js/main.260ec38e.js"
   ]
 }
