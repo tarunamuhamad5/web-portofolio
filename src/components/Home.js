@@ -9,14 +9,14 @@ const Home = () => {
 
   const openCv = () => {
     window.open(
-      "https://drive.google.com/file/d/1-m6pugGY4r2gs0so9LBgEVjFDtVHW21G/view?usp=sharing",
+      "https://drive.google.com/file/d/1WRBqNAk5ztuVECej_qx_mr23B3NGHc8U/view?usp=sharing",
       "_blank"
     );
   };
 
   return (
     <div>
-      <Box sx={{ height: "90vh" }}>
+      <Box sx={{ height: "100vh" }}>
         <Grid
           container
           columns={20}

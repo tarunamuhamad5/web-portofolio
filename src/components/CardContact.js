@@ -34,7 +34,7 @@ const CardContact = ({ data }) => {
                   src={require(`../assets/images/${item.icon}`)}
                   onClick={() => handleImageClick(item.link)}
                 />
-                <Typography variant="body1" mt={"1rem"}>
+                <Typography variant="body2" mt={"1rem"}>
                   {item.contact}
                 </Typography>
               </div>
