@@ -16,7 +16,6 @@ const NavBar = () => {
     display: "flex",
     flexGrow: 1,
     alignItems: "center",
-    justifyContent: "center",
     gap: theme.spacing(3),
   }));
 
@@ -30,13 +29,33 @@ const NavBar = () => {
     },
   });
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    const scrollPosition = element.offsetTop - 40; // Adjust the value as needed
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <NavbarContainer>
       <NavBarBox>
-        <NavBarButton variant="body2">Home</NavBarButton>
-        <NavBarButton variant="body2">About</NavBarButton>
-        <NavBarButton variant="body2">Projects</NavBarButton>
-        <NavBarButton variant="body2">Contact</NavBarButton>
+        <NavBarButton variant="body2" onClick={() => scrollToSection("Roles")}>
+          Role
+        </NavBarButton>
+        <NavBarButton
+          variant="body2"
+          onClick={() => scrollToSection("Projects")}
+        >
+          Projects
+        </NavBarButton>
+        <NavBarButton
+          variant="body2"
+          onClick={() => scrollToSection("Introduction")}
+        >
+          Contact
+        </NavBarButton>
       </NavBarBox>
     </NavbarContainer>
   );

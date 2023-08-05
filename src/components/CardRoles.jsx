@@ -1,40 +1,102 @@
-import { Box, Typography, styled } from "@mui/material";
 import React from "react";
+import { useTheme } from "@mui/material/styles";
+import {
+  useMediaQuery,
+  Typography,
+  Card,
+  CardContent,
+  Button,
+  Grid,
+} from "@mui/material";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
 
-const CardRoles = ({ role }) => {
-  const BoxRoles = styled(Box)(({ theme }) => ({
-    borderTopLeftRadius: "10px",
-    borderTopRightRadius: "10px",
-    alignContent: "center",
-    justifyContent: "center",
-    maxWidth: "400",
-    backgroundColor: "#fff",
-    margin: theme.spacing(0, 3, 0, 3),
-    [theme.breakpoints.down("md")]: {
-      margin: theme.spacing(3, 0, 3, 0),
-    },
-  }));
+const CardRoles = ({ DataRoles }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-  return (
-    <BoxRoles>
-      <Box align={"center"} sx={{ width: "100%" }}>
-        <img
-          width={"200px"}
-          alt={role.title}
-          src={require(`../assets/images/${role.src_image}`)}
-        />
-      </Box>
+  const renderCardsMobile = () => {
+    return (
+      <React.Fragment>
+        <AutoPlaySwipeableViews enableMouseEvents interval={1500}>
+          {DataRoles.map((item, index) => (
+            <div>
+              <Card
+                key={index}
+                variant="naked"
+                sx={{
+                  width: "auto",
+                  margin: "1%",
+                  mt: "20px",
+                }}
+              >
+                <CardContent>
+                  <div align="center">
+                    <img
+                      height={"160px"}
+                      alt={item.title}
+                      src={require(`../assets/images/${item.src_image}`)}
+                    />
+                  </div>
+                  <div>
+                    <Typography variant="h4" align="center" mt={"1rem"}>
+                      {item.title}
+                    </Typography>
+                    <Typography variant="body1" mt={"5px"} align="center">
+                      {item.body}
+                    </Typography>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </AutoPlaySwipeableViews>
+      </React.Fragment>
+    );
+  };
 
-      <Box>
-        <Typography variant="h4" align="center" mt={"1rem"}>
-          {role.title}
-        </Typography>
-        <Typography variant="body1" mt={"5px"} align="center">
-          {role.body}
-        </Typography>
-      </Box>
-    </BoxRoles>
-  );
+  const renderCardsDekstop = () => {
+    return (
+      <div style={{ display: "flex" }}>
+        {DataRoles.map((item, index) => (
+          <Card
+            key={index}
+            variant="naked"
+            sx={{
+              height: "auto",
+              width: "40%",
+              margin: "1%",
+            }}
+          >
+            <CardContent>
+              <div align="center">
+                <img
+                  width={"200px"}
+                  alt={item.title}
+                  src={require(`../assets/images/${item.src_image}`)}
+                />
+              </div>
+              <div>
+                <Typography variant="h5" align="center">
+                  {item.title}
+                </Typography>
+                <Typography variant="body1" mt={"10px"} align="center">
+                  {item.body}
+                </Typography>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    );
+  };
+
+  if (isMobile) {
+    return <div>{renderCardsMobile()}</div>;
+  } else {
+    return <div>{renderCardsDekstop()}</div>;
+  }
 };
 
 export default CardRoles;

@@ -14,6 +14,12 @@ const Introduction = () => {
     color: "black",
     borderColor: "black",
     marginTop: "1rem",
+    borderRadius: "10px",
+    "&:hover": {
+      backgroundColor: "black",
+      color: "white",
+      borderColor: "white",
+    },
   }));
 
   const Title = styled(Typography)(({ theme }) => ({
@@ -26,7 +32,7 @@ const Introduction = () => {
   }));
 
   const Summary = styled(Typography)(({ theme }) => ({
-    fontSize: "40px",
+    fontSize: "30px",
     color: "black",
     [theme.breakpoints.down("sm")]: {
       fontSize: "20px",
