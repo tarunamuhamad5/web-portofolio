@@ -28,11 +28,7 @@ const Home = () => {
     alignItems: "center",
     gap: theme.spacing(5),
     marginTop: theme.spacing(3),
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "column",
-
-      textAlign: "center",
-    },
+     
   }));
 
   const Title = styled(Typography)(({ theme }) => ({
