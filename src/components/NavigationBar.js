@@ -62,9 +62,6 @@ const NavigationBar = () => {
           </Grid>
         </Toolbar>
       </AppBar>
-
-      {/* Offset buat elevate Navigation Bar */}
-      <Offset />
     </React.Fragment>
   );
 };
