@@ -1,4 +1,4 @@
-import { Grid, Typography, useMediaQuery } from "@mui/material";
+import { Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import Contactdata from "../assets/database/ContactData.json";
 import { useTheme } from "@mui/material/styles";
@@ -17,14 +17,9 @@ const Contact = () => {
       >
         Contact Me
       </Typography>
-
-      <Grid container columns={20}>
-        <Grid item xs={isMobile ? "1" : "4"}></Grid>
-        <Grid item xs>
-          <CardContact data={Contactdata} />
-        </Grid>
-        <Grid item xs={isMobile ? "1" : "4"}></Grid>
-      </Grid>
+      <Container>
+        <CardContact data={Contactdata} />
+      </Container>
     </React.Fragment>
   );
 };

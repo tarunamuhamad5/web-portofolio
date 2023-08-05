@@ -25,11 +25,12 @@ const Home = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
     gap: theme.spacing(5),
     marginTop: theme.spacing(3),
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
-      alignItems: "center",
+
       textAlign: "center",
     },
   }));
@@ -49,8 +50,8 @@ const Home = () => {
       <Box sx={{ minHeight: "100vh" }}>
         <Container>
           <CustomBox>
-            <Box sx={{ flex: "1" }}>
-              <Title variant="h1" sx={{ mt: 30, mb: 2 }}>
+            <Box sx={{ flex: "1", mt: 25, mb: 2 }}>
+              <Title variant="h1">
                 Hello,
                 <br />
                 I'm Taruna!

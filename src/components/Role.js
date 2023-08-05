@@ -1,4 +1,4 @@
-import { Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import Specialist from "../assets/database/Specialist.json";
 import CardRole from "./CardRole";
@@ -8,20 +8,15 @@ const Role = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <React.Fragment>
+    <Box>
       <Typography variant={isMobile ? "h3" : "h2"} align="center" mt="1.5rem">
-        What I Do test
+        What I Do
       </Typography>
-      <Grid container columns={20}>
-        <Grid item xs={1}></Grid> {/* Grid Left */}
-        {/* Content Here */}
-        <Grid item xs>
-          <CardRole data={Specialist} />
-        </Grid>
-        {/* Content End */}
-        <Grid item xs={1}></Grid> {/* Grid Right */}
-      </Grid>
-    </React.Fragment>
+
+      <Container>
+        <CardRole data={Specialist} />
+      </Container>
+    </Box>
   );
 };
 
