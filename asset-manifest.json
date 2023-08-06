@@ -1,8 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.81379903.css",
-    "main.js": "/static/js/main.1c9724ef.js",
-    "static/js/787.a13be3ec.chunk.js": "/static/js/787.a13be3ec.chunk.js",
+    "main.js": "/static/js/main.7d42dfa0.js",
     "static/media/CleaningRobots.png": "/static/media/CleaningRobots.d5bbc809c965ec171650.png",
     "static/media/Archi.png": "/static/media/Archi.f0ab96359ddad83b4feb.png",
     "static/media/BlueGuard.png": "/static/media/BlueGuard.62281d65455e6bc39cef.png",
@@ -15,13 +13,11 @@
     "static/media/IoT.png": "/static/media/IoT.3396016b289693781d72.png",
     "static/media/Developer.png": "/static/media/Developer.b0dba7cd7b196b52a274.png",
     "static/media/Robotics.png": "/static/media/Robotics.12ca40361df448aa651c.png",
+    "static/media/IoT.svg": "/static/media/IoT.febd12cf3dfbffe5c1a5.svg",
     "index.html": "/index.html",
-    "main.81379903.css.map": "/static/css/main.81379903.css.map",
-    "main.1c9724ef.js.map": "/static/js/main.1c9724ef.js.map",
-    "787.a13be3ec.chunk.js.map": "/static/js/787.a13be3ec.chunk.js.map"
+    "main.7d42dfa0.js.map": "/static/js/main.7d42dfa0.js.map"
   },
   "entrypoints": [
-    "static/css/main.81379903.css",
-    "static/js/main.1c9724ef.js"
+    "static/js/main.7d42dfa0.js"
   ]
 }
