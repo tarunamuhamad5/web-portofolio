@@ -49,7 +49,7 @@ const Introduction = () => {
   }));
 
   return (
-    <Box sx={{ backgroundColor: "white", minHeight: "100vh" }}>
+    <Box sx={{ backgroundColor: "#F9F9F9", minHeight: "100vh" }}>
       <NavBar />
       <ContainerIntroduction>
         <Title variant="h3">

@@ -52,7 +52,7 @@ const NavBar = () => {
         </NavBarButton>
         <NavBarButton
           variant="body2"
-          onClick={() => scrollToSection("Introduction")}
+          onClick={() => scrollToSection("Contact")}
         >
           Contact
         </NavBarButton>

@@ -2,16 +2,13 @@
   {
     "contact": "muhamad.taruna@outlook.co.id",
     "icon": "ContactIcon/Email.png",
+    "type": "Email",
     "link": "mailto:muhamad.taruna@outlook.co.id"
-  },
-  {
-    "contact": "+6281272425872",
-    "icon": "ContactIcon/WA.png",
-    "link": "https://wa.me/6281272425872"
   },
   {
     "contact": "Muhamad Taruna",
     "icon": "ContactIcon/Linkedin.png",
+    "type": "LinkedIn",
     "link": "https://www.linkedin.com/in/tarunamuhamad5/"
   }
 ]

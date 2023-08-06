@@ -14,7 +14,8 @@ const Projects = () => {
   }));
 
   return (
-    <Box>
+    <Box sx={{ backgroundColor: "#F9F9F9" }}>
+      <br />
       <Container>
         <Title variant="h4" align="center">
           Projects
@@ -23,6 +24,7 @@ const Projects = () => {
           <CardProjects project={project} />
         ))}
       </Container>
+      <br />
     </Box>
   );
 };

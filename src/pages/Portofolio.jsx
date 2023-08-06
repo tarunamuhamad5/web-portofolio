@@ -3,6 +3,7 @@ import Introduction from "../components/Introduction";
 import Roles from "../components/Roles";
 import Projects from "../components/Projects";
 import WordCoworkers from "../components/WordCoworkers";
+import Contact from "../components/Contact";
 
 const Portofolio = () => {
   return (
@@ -18,6 +19,9 @@ const Portofolio = () => {
       </div>
       <div id="ExCoworkers">
         <WordCoworkers />
+      </div>
+      <div id="Contact">
+        <Contact />
       </div>
     </React.Fragment>
   );
