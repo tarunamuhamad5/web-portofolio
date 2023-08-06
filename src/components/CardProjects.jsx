@@ -1,5 +1,4 @@
 import {
-  Box,
   Card,
   Typography,
   styled,
@@ -11,6 +10,7 @@ import React from "react";
 
 const CardProjects = ({ project }) => {
   const BoxCardProjects = styled(Container)(({ theme }) => ({
+    width: "100%",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
     },
@@ -25,6 +25,15 @@ const CardProjects = ({ project }) => {
     },
   }));
 
+  const TitleProject = styled(Typography)(({ theme }) => ({
+    fontSize: "30px",
+    fontWeight: "bold",
+  }));
+  const BodyProject = styled(Typography)(({ theme }) => ({
+    fontSize: "18px",
+    color: "#7E7676",
+  }));
+
   return (
     <BoxCardProjects>
       <Card sx={{ margin: "4%" }}>
@@ -32,7 +41,7 @@ const CardProjects = ({ project }) => {
           <GridCardProjects container columns={20}>
             <Grid project xs align="center">
               <img
-                width={"93%"}
+                width={"95%"}
                 alt={project.title}
                 src={require(`../assets/images/${project.src_image}`)}
                 style={{
@@ -42,12 +51,12 @@ const CardProjects = ({ project }) => {
             </Grid>
 
             <Grid project xs>
-              <Typography variant="h4" align="center">
+              <TitleProject variant="h4" align="center">
                 {project.title}
-              </Typography>
-              <Typography variant="body1" sx={{ mt: "5px" }}>
+              </TitleProject>
+              <BodyProject variant="body1" sx={{ mt: "5px" }}>
                 {project.description}
-              </Typography>
+              </BodyProject>
             </Grid>
           </GridCardProjects>
         </CardContent>

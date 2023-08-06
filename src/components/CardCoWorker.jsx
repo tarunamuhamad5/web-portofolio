@@ -9,27 +9,35 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 
 const CardCoWorker = ({ Word }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   const CardWords = styled(Card)(({ theme }) => ({
     height: "auto",
     width: "68%",
     margin: "2%",
     [theme.breakpoints.down("md")]: {
-      width: "93%",
+      width: "95%",
     },
+  }));
+
+  const NameCoworker = styled(Typography)(({ theme }) => ({
+    fontSize: "35px",
+    fontWeight: "bold",
+  }));
+
+  const WordCoworker = styled(Typography)(({ theme }) => ({
+    fontSize: "18px",
+
+    color: "#7E7676",
   }));
   return (
     <div align="center">
       <CardWords align="center">
         <CardContent>
-          <Typography variant={isMobile ? "h5" : "h4"} align="center">
+          <NameCoworker variant={"h2"} align="center">
             {Word.name}
-          </Typography>
-          <Typography variant={isMobile ? "body2" : "body2"} mt={"1rem"}>
+          </NameCoworker>
+          <WordCoworker variant={"body2"} mt={"1rem"}>
             {Word.message}
-          </Typography>
+          </WordCoworker>
         </CardContent>
       </CardWords>
     </div>

@@ -18,6 +18,14 @@ const ContactCard = ({ Contact }) => {
     },
   }));
 
+  const Body = styled(Typography)(({ theme }) => ({
+    fontSize: "20px",
+    color: "#7E7676",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
+  }));
+
   const handleImageClick = (url) => {
     window.open(url, "_blank");
   };
@@ -44,7 +52,7 @@ const ContactCard = ({ Contact }) => {
         <Title variant="h1" onClick={() => handleImageClick(Contact.link)}>
           {Contact.type}
         </Title>
-        <Typography variant="body2">{Contact.contact}</Typography>
+        <Body variant="body2">{Contact.contact}</Body>
       </Box>
     </Box>
   );

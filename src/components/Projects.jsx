@@ -20,10 +20,10 @@ const Projects = () => {
         <Title variant="h4" align="center">
           Projects
         </Title>
-        {DataProjects.map((project) => (
-          <CardProjects project={project} />
-        ))}
       </Container>
+      {DataProjects.map((project) => (
+        <CardProjects project={project} />
+      ))}
       <br />
     </Box>
   );

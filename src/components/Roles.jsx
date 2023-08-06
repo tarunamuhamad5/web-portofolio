@@ -20,8 +20,8 @@ const Roles = () => {
         <Title align="center" variant="h2">
           What I Do
         </Title>
-        <CardRoles DataRoles={DataRoles} />
       </Container>
+      <CardRoles DataRoles={DataRoles} />
     </Box>
   );
 };

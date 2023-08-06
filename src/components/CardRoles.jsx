@@ -5,16 +5,30 @@ import {
   Typography,
   Card,
   CardContent,
-  Button,
-  Grid,
+  styled,
+  Box,
 } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
 const CardRoles = ({ DataRoles }) => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+  const RoleTitle = styled(Typography)(({ theme }) => ({
+    fontWeight: "bold",
+    fontSize: "20px",
+    [theme.breakpoints.down("lg")]: {
+      fontSize: "30px",
+    },
+  }));
+
+  const RoleBody = styled(Typography)(({ theme }) => ({
+    fontSize: "20px",
+    color: "#7E7676",
+    [theme.breakpoints.down("lg")]: {},
+  }));
 
   const renderCardsMobile = () => {
     return (
@@ -40,12 +54,12 @@ const CardRoles = ({ DataRoles }) => {
                     />
                   </div>
                   <div>
-                    <Typography variant="h4" align="center" mt={"1rem"}>
+                    <RoleTitle variant="h4" align="center" mt={"1rem"}>
                       {item.title}
-                    </Typography>
-                    <Typography variant="body1" mt={"5px"} align="center">
+                    </RoleTitle>
+                    <RoleBody variant="body1" mt={"5px"} align="center">
                       {item.body}
-                    </Typography>
+                    </RoleBody>
                   </div>
                 </CardContent>
               </Card>
@@ -58,37 +72,37 @@ const CardRoles = ({ DataRoles }) => {
 
   const renderCardsDekstop = () => {
     return (
-      <div style={{ display: "flex" }}>
+      <Box style={{ display: "flex" }} justifyContent="center">
         {DataRoles.map((item, index) => (
           <Card
             key={index}
             variant="naked"
             sx={{
               height: "auto",
-              width: "40%",
+              width: "20%",
               margin: "1%",
             }}
           >
             <CardContent>
               <div align="center">
                 <img
-                  width={"200px"}
+                  width={"160px"}
                   alt={item.title}
                   src={require(`../assets/images/${item.src_image}`)}
                 />
               </div>
               <div>
-                <Typography variant="h5" align="center">
+                <RoleTitle variant="h5" align="center">
                   {item.title}
-                </Typography>
-                <Typography variant="body1" mt={"10px"} align="center">
+                </RoleTitle>
+                <RoleBody variant="body1" mt={"10px"} align="center">
                   {item.body}
-                </Typography>
+                </RoleBody>
               </div>
             </CardContent>
           </Card>
         ))}
-      </div>
+      </Box>
     );
   };
 
