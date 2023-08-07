@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.4be76d6d.js",
+    "main.js": "/static/js/main.ba244763.js",
     "static/media/CleaningRobots.png": "/static/media/CleaningRobots.d5bbc809c965ec171650.png",
     "static/media/Archi.png": "/static/media/Archi.f0ab96359ddad83b4feb.png",
     "static/media/BlueGuard.png": "/static/media/BlueGuard.62281d65455e6bc39cef.png",
@@ -15,9 +15,9 @@
     "static/media/Robotics.png": "/static/media/Robotics.12ca40361df448aa651c.png",
     "static/media/IoT.svg": "/static/media/IoT.ff7af50bc17d5cacccd7.svg",
     "index.html": "/index.html",
-    "main.4be76d6d.js.map": "/static/js/main.4be76d6d.js.map"
+    "main.ba244763.js.map": "/static/js/main.ba244763.js.map"
   },
   "entrypoints": [
-    "static/js/main.4be76d6d.js"
+    "static/js/main.ba244763.js"
   ]
 }
