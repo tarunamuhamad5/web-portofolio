@@ -1,6 +1,6 @@
-import { Box, Typography, styled, useMediaQuery } from "@mui/material";
+import {Box, styled, Typography, useMediaQuery} from "@mui/material";
 import React from "react";
-import { useTheme } from "@mui/material/styles";
+import {useTheme} from "@mui/material/styles";
 
 const ContactCard = ({ Contact }) => {
   const theme = useTheme();

@@ -1,15 +1,8 @@
 import React from "react";
-import { useTheme } from "@mui/material/styles";
-import {
-  useMediaQuery,
-  Typography,
-  Card,
-  CardContent,
-  styled,
-  Box,
-} from "@mui/material";
+import {useTheme} from "@mui/material/styles";
+import {Box, Card, CardContent, styled, Typography, useMediaQuery,} from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
+import {autoPlay} from "react-swipeable-views-utils";
 
 const CardRoles = ({ DataRoles }) => {
   const theme = useTheme();

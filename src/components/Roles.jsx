@@ -1,4 +1,4 @@
-import { Box, Container, Typography, styled } from "@mui/material";
+import {Box, Container, styled, Typography} from "@mui/material";
 import React from "react";
 import DataRoles from "../assets/database/Roles.json";
 import CardRoles from "./CardRoles";

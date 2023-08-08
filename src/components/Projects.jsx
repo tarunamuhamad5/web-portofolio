@@ -1,4 +1,4 @@
-import { Typography, Box, styled, Container } from "@mui/material";
+import {Box, Container, styled, Typography} from "@mui/material";
 import React from "react";
 import CardProjects from "./CardProjects";
 import DataProjects from "../assets/database/Projects.json";

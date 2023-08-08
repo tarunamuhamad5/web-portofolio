@@ -1,8 +1,8 @@
-import { Box, Container, Typography, styled } from "@mui/material";
+import {Box, Container, styled, Typography} from "@mui/material";
 import React from "react";
 import WordFromCoWorkers from "../assets/database/WordFromCoWorkers.json";
 import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
+import {autoPlay} from "react-swipeable-views-utils";
 import CardCoWorker from "./CardCoWorker";
 
 const WordCoworkers = () => {

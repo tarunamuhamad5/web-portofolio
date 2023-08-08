@@ -1,11 +1,4 @@
-import {
-  Card,
-  Typography,
-  styled,
-  CardContent,
-  Grid,
-  Container,
-} from "@mui/material";
+import {Card, CardContent, Container, Grid, styled, Typography,} from "@mui/material";
 import React from "react";
 
 const CardProjects = ({ project }) => {
