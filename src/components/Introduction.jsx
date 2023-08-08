@@ -15,10 +15,11 @@ const Introduction = () => {
   const theme = useTheme();
   const isMobileDesktop = useMediaQuery(theme.breakpoints.down("lg"));
 
+
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const openCv = () => {
     window.open(
-      "https://drive.google.com/file/d/1WRBqNAk5ztuVECej_qx_mr23B3NGHc8U/view?usp=sharing",
+      "https://drive.google.com/file/d/1mp4K8rNtmj2baLm-_H0ZLrKgCAUc2lwq/view?usp=sharing",
       "_blank"
     );
   };
@@ -77,6 +78,7 @@ const Introduction = () => {
       minHeight={isMobile ? "100vh" : isMobileDesktop ? "30vh" : "100vh"}
       sx={{ backgroundColor: "#F9F9F9" }}
     >
+
       <NavBar />
       <ContainerIntroduction>
         <Title variant="h3">
