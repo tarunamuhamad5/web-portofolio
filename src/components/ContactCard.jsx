@@ -7,11 +7,11 @@ const ContactCard = ({ Contact }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const Title = styled(Typography)(({ theme }) => ({
-    fontSize: "50px",
+    fontSize: "35px",
     color: "black",
     fontWeight: "bold",
     [theme.breakpoints.down("md")]: {
-      fontSize: "40px",
+      fontSize: "35px",
     },
     "&:hover": {
       color: "red",
