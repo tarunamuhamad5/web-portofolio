@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.f418d96f.js",
+    "main.js": "/static/js/main.3561a292.js",
     "static/media/CleaningRobots.png": "/static/media/CleaningRobots.d5bbc809c965ec171650.png",
     "static/media/Archi.png": "/static/media/Archi.f0ab96359ddad83b4feb.png",
     "static/media/BlueGuard.png": "/static/media/BlueGuard.62281d65455e6bc39cef.png",
@@ -9,14 +9,14 @@
     "static/media/Email.png": "/static/media/Email.74f4984e1ce96af41be4.png",
     "static/media/IoT.png": "/static/media/IoT.bba8b6f2df1de9800a07.png",
     "static/media/Robotics.png": "/static/media/Robotics.953a8c61bb169f16816d.png",
-    "static/media/DistanceCamera.png": "/static/media/DistanceCamera.cb11d8d15db77e00ca73.png",
+    "static/media/DistanceCamera.png": "/static/media/DistanceCamera.d447cb8111c7985c7289.png",
     "static/media/WA.png": "/static/media/WA.0751fad9932f8e28855b.png",
-    "static/media/Developer.png": "/static/media/Developer.fd8dd810217c3338c960.png",
+    "static/media/Developer.png": "/static/media/Developer.98435fcde643e40c9a3b.png",
     "static/media/Linkedin.png": "/static/media/Linkedin.b946d71534977e3c2c80.png",
     "index.html": "/index.html",
-    "main.f418d96f.js.map": "/static/js/main.f418d96f.js.map"
+    "main.3561a292.js.map": "/static/js/main.3561a292.js.map"
   },
   "entrypoints": [
-    "static/js/main.f418d96f.js"
+    "static/js/main.3561a292.js"
   ]
 }
