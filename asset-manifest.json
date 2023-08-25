@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.ab320b2e.js",
+    "main.js": "/static/js/main.30230664.js",
     "static/media/CleaningRobots.png": "/static/media/CleaningRobots.d5bbc809c965ec171650.png",
     "static/media/Archi.png": "/static/media/Archi.f0ab96359ddad83b4feb.png",
     "static/media/BlueGuard.png": "/static/media/BlueGuard.62281d65455e6bc39cef.png",
-    "static/media/AboutPicture.jpg": "/static/media/AboutPicture.ea5026dbbaa9dee90225.jpg",
     "static/media/DataScientist.png": "/static/media/DataScientist.3203f69eb36fe9e88489.png",
     "static/media/Email.png": "/static/media/Email.1f5b030d434801b6e20a.png",
     "static/media/Linkedin.png": "/static/media/Linkedin.8888b096bb46c5964608.png",
@@ -13,9 +12,9 @@
     "static/media/DistanceCamera.png": "/static/media/DistanceCamera.d447cb8111c7985c7289.png",
     "static/media/Developer.png": "/static/media/Developer.98435fcde643e40c9a3b.png",
     "index.html": "/index.html",
-    "main.ab320b2e.js.map": "/static/js/main.ab320b2e.js.map"
+    "main.30230664.js.map": "/static/js/main.30230664.js.map"
   },
   "entrypoints": [
-    "static/js/main.ab320b2e.js"
+    "static/js/main.30230664.js"
   ]
 }
