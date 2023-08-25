@@ -1,22 +1,23 @@
-import {Card, CardContent, styled, Typography,} from "@mui/material";
+import { Card, CardContent, styled, Typography } from "@mui/material";
 import React from "react";
 
-const CardCoWorker = ({Word}) => {
-    const CardWords = styled(Card)(({theme}) => ({
+const CardCoWorker = ({ Word }) => {
+    const CardWords = styled(Card)(({ theme }) => ({
         height: "auto",
         width: "68%",
         margin: "2%",
+        alignItems: "stretch",
         [theme.breakpoints.down("md")]: {
             width: "95%",
         },
     }));
 
-    const NameCoworker = styled(Typography)(({theme}) => ({
+    const NameCoworker = styled(Typography)(({ theme }) => ({
         fontSize: "35px",
         fontWeight: "bold",
     }));
 
-    const WordCoworker = styled(Typography)(({theme}) => ({
+    const WordCoworker = styled(Typography)(({ theme }) => ({
         fontSize: "18px",
 
         color: "#7E7676",

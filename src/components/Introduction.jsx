@@ -1,13 +1,19 @@
 import React from "react";
 import NavBar from "./NavBar";
-import {Box, Button, Container, styled, Typography, useMediaQuery,} from "@mui/material";
+import {
+    Box,
+    Button,
+    Container,
+    styled,
+    Typography,
+    useMediaQuery,
+} from "@mui/material";
 
-import {useTheme} from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 
 const Introduction = () => {
     const theme = useTheme();
     const isMobileDesktop = useMediaQuery(theme.breakpoints.down("lg"));
-
 
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const openCv = () => {
@@ -17,7 +23,7 @@ const Introduction = () => {
         );
     };
 
-    const CVButton = styled(Button)(({theme}) => ({
+    const CVButton = styled(Button)(({ theme }) => ({
         color: "black",
         borderColor: "black",
         marginTop: "1rem",
@@ -29,7 +35,7 @@ const Introduction = () => {
         },
     }));
 
-    const Title = styled(Typography)(({theme}) => ({
+    const Title = styled(Typography)(({ theme }) => ({
         fontSize: "80px",
         color: "black",
         fontWeight: "bold",
@@ -41,7 +47,7 @@ const Introduction = () => {
         },
     }));
 
-    const Summary = styled(Typography)(({theme}) => ({
+    const Summary = styled(Typography)(({ theme }) => ({
         fontSize: "30px",
         color: "#7E7676",
         [theme.breakpoints.down("lg")]: {
@@ -52,7 +58,7 @@ const Introduction = () => {
         },
     }));
 
-    const ContainerIntroduction = styled(Container)(({theme}) => ({
+    const ContainerIntroduction = styled(Container)(({ theme }) => ({
         marginTop: "12%",
         [theme.breakpoints.down("lg")]: {
             marginTop: "8%",
@@ -69,26 +75,30 @@ const Introduction = () => {
     return (
         <Box
             minHeight={isMobile ? "100vh" : isMobileDesktop ? "30vh" : "100vh"}
-            sx={{backgroundColor: "#F9F9F9"}}
+            sx={{ backgroundColor: "#F9F9F9" }}
         >
-
-            <NavBar/>
+            <NavBar />
             <ContainerIntroduction>
                 <Title variant="h3">
                     Hello,
-                    <br/>
+                    <br />
                     I'm Taruna!
                 </Title>
                 <Summary variant={"body2"}>
                     Electrical Engineer Fresh Graduate from
-                    <br/>
+                    <br />
                     Bandung Institute of Technology
                 </Summary>
-                <CVButton size="large" variant="outlined" style={{}} onClick={openCv}>
+                <CVButton
+                    size="large"
+                    variant="outlined"
+                    style={{}}
+                    onClick={openCv}
+                >
                     Check out my CV
                 </CVButton>
             </ContainerIntroduction>
-            <br/>
+            <br />
         </Box>
     );
 };

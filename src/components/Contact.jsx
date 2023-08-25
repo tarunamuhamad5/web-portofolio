@@ -1,10 +1,10 @@
-import {Box, Container, styled, Typography} from "@mui/material";
+import { Box, Container, styled, Typography } from "@mui/material";
 import React from "react";
 import ContactData from "../assets/database/ContactData.json";
 import ContactCard from "./ContactCard";
 
 const Contact = () => {
-    const Title = styled(Typography)(({theme}) => ({
+    const Title = styled(Typography)(({ theme }) => ({
         fontSize: "60px",
         color: "black",
         fontWeight: "bold",
@@ -13,7 +13,7 @@ const Contact = () => {
         },
     }));
 
-    const BoxContact = styled(Box)(({theme}) => ({
+    const BoxContact = styled(Box)(({ theme }) => ({
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
@@ -23,23 +23,22 @@ const Contact = () => {
         },
     }));
 
-    const ContainerContact = styled(Box)(({theme}) => ({
+    const ContainerContact = styled(Box)(({ theme }) => ({
         backgroundColor: "#F9F9F9",
         minHeight: "25vh",
     }));
 
     return (
-
         <ContainerContact>
             <Container>
-                <br/>
+                <br />
                 <Title variant="h2" align="center">
                     Contact
                 </Title>
             </Container>
             <BoxContact>
                 {ContactData.map((Contact) => (
-                    <ContactCard Contact={Contact}/>
+                    <ContactCard Contact={Contact} />
                 ))}
             </BoxContact>
         </ContainerContact>
