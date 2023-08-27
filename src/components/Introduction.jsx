@@ -39,8 +39,9 @@ const Introduction = () => {
         fontSize: "80px",
         color: "black",
         fontWeight: "bold",
+
         [theme.breakpoints.down("lg")]: {
-            fontSize: "80",
+            fontSize: "80px",
         },
         [theme.breakpoints.down("sm")]: {
             fontSize: "70px",
@@ -48,34 +49,33 @@ const Introduction = () => {
     }));
 
     const Summary = styled(Typography)(({ theme }) => ({
-        fontSize: "30px",
+        fontSize: "25px",
         color: "#7E7676",
         [theme.breakpoints.down("lg")]: {
-            fontSize: "15px",
+            fontSize: "25px",
         },
         [theme.breakpoints.down("sm")]: {
-            fontSize: "20px",
+            fontSize: "18px",
         },
     }));
 
     const ContainerIntroduction = styled(Container)(({ theme }) => ({
         marginTop: "12%",
+        textAlign: "center",
         [theme.breakpoints.down("lg")]: {
             marginTop: "8%",
             flexDirection: "column",
-            textAlign: "center",
         },
         [theme.breakpoints.down("sm")]: {
             marginTop: "50%",
             flexDirection: "column",
-            textAlign: "center",
         },
     }));
 
     return (
         <Box
             minHeight={isMobile ? "100vh" : isMobileDesktop ? "30vh" : "100vh"}
-            sx={{ backgroundColor: "#F9F9F9" }}
+            sx={{ backgroundColor: "#F9F9F9", alignItems: "center" }}
         >
             <NavBar />
             <ContainerIntroduction>
@@ -85,7 +85,7 @@ const Introduction = () => {
                     I'm Taruna!
                 </Title>
                 <Summary variant={"body2"}>
-                    Electrical Engineer Fresh Graduate from
+                    Electrical Engineer Graduate from
                     <br />
                     Bandung Institute of Technology
                 </Summary>
@@ -94,6 +94,7 @@ const Introduction = () => {
                     variant="outlined"
                     style={{}}
                     onClick={openCv}
+                    align="center"
                 >
                     Check out my CV
                 </CVButton>

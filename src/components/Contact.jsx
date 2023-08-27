@@ -5,7 +5,7 @@ import ContactCard from "./ContactCard";
 
 const Contact = () => {
     const Title = styled(Typography)(({ theme }) => ({
-        fontSize: "60px",
+        fontSize: "50px",
         color: "black",
         fontWeight: "bold",
         [theme.breakpoints.down("md")]: {
