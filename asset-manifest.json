@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.98fa6d89.js",
+    "main.js": "/static/js/main.e90c7b18.js",
     "static/media/CleaningRobots.png": "/static/media/CleaningRobots.d5bbc809c965ec171650.png",
     "static/media/Archi.png": "/static/media/Archi.f0ab96359ddad83b4feb.png",
     "static/media/BlueGuard.png": "/static/media/BlueGuard.62281d65455e6bc39cef.png",
@@ -12,9 +12,9 @@
     "static/media/DistanceCamera.png": "/static/media/DistanceCamera.850e14b634ee9439940c.png",
     "static/media/Developer.png": "/static/media/Developer.98435fcde643e40c9a3b.png",
     "index.html": "/index.html",
-    "main.98fa6d89.js.map": "/static/js/main.98fa6d89.js.map"
+    "main.e90c7b18.js.map": "/static/js/main.e90c7b18.js.map"
   },
   "entrypoints": [
-    "static/js/main.98fa6d89.js"
+    "static/js/main.e90c7b18.js"
   ]
 }
