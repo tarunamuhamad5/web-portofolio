@@ -60,14 +60,11 @@ const Introduction = () => {
     }));
 
     const ContainerIntroduction = styled(Container)(({ theme }) => ({
-        marginTop: "12%",
         textAlign: "center",
         [theme.breakpoints.down("lg")]: {
-            marginTop: "8%",
             flexDirection: "column",
         },
         [theme.breakpoints.down("sm")]: {
-            marginTop: "50%",
             flexDirection: "column",
         },
     }));
@@ -75,9 +72,13 @@ const Introduction = () => {
     return (
         <Box
             minHeight={isMobile ? "100vh" : isMobileDesktop ? "30vh" : "100vh"}
-            sx={{ backgroundColor: "#F9F9F9", alignItems: "center" }}
+            sx={{
+                backgroundColor: "#F9F9F9",
+                alignContent: "center",
+                display: "flex",
+                flexWrap: "wrap",
+            }}
         >
-            <NavBar />
             <ContainerIntroduction>
                 <Title variant="h3">
                     Hello,
@@ -99,7 +100,6 @@ const Introduction = () => {
                     Check out my CV
                 </CVButton>
             </ContainerIntroduction>
-            <br />
         </Box>
     );
 };

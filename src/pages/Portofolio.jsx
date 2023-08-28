@@ -4,27 +4,29 @@ import Roles from "../components/Roles";
 import Projects from "../components/Projects";
 import WordCoworkers from "../components/WordCoworkers";
 import Contact from "../components/Contact";
+import NavBar from "../components/NavBar";
 
 const Portofolio = () => {
-  return (
-    <React.Fragment>
-      <div id="Introduction">
-        <Introduction />
-      </div>
-      <div id="Roles">
-        <Roles />
-      </div>
-      <div id="Projects">
-        <Projects />
-      </div>
-      <div id="ExCoworkers">
-        <WordCoworkers />
-      </div>
-      <div id="Contact">
-        <Contact />
-      </div>
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <NavBar />
+            <div id="Introduction">
+                <Introduction />
+            </div>
+            <div id="Roles">
+                <Roles />
+            </div>
+            <div id="Projects">
+                <Projects />
+            </div>
+            <div id="ExCoworkers">
+                <WordCoworkers />
+            </div>
+            <div id="Contact">
+                <Contact />
+            </div>
+        </React.Fragment>
+    );
 };
 
 export default Portofolio;
