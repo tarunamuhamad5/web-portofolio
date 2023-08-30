@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.2eae2787.css","mappings":"AAAA,iBAMI,wBAAyB,CAHzB,SAAU,CAFV,cAAe,CAGf,KAAM,CAFN,UAAW,CAGX,YAEJ","sources":["style/NavBar.css"],"sourcesContent":[".floating-navbar {\r\n    position: fixed;\r\n    width: 100%;\r\n    height: 7%;\r\n    top: 0;\r\n    z-index: 1000;\r\n    background-color: #f9f9f9;\r\n}\r\n"],"names":[],"sourceRoot":""}
