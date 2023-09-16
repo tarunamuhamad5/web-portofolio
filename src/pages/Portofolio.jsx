@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import WordCoworkers from "../components/WordCoworkers";
 import Contact from "../components/Contact";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Portofolio = () => {
     return (
@@ -25,6 +26,9 @@ const Portofolio = () => {
             <div id="Contact">
                 <Contact />
             </div>
+            {/* <div>
+                <Footer />
+            </div> */}
         </React.Fragment>
     );
 };

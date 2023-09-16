@@ -51,16 +51,18 @@ const CardProjects = ({ project }) => {
                     <GridCardProjects container columns={20}>
                         <Grid project xs align="center">
                             <img
-                                width={"95%"}
+                                width={"100%"}
                                 alt={project.title}
                                 src={require(`../assets/images/${project.src_image}`)}
                                 style={{
+                                    display: "flex",
                                     borderRadius: "3%",
+                                    objectFit: "cover",
                                 }}
                             />
                         </Grid>
 
-                        <Grid project xs>
+                        <Grid project xs sx={{ marginLeft: "2%" }}>
                             <TitleProject variant="h4" align="center">
                                 {project.title}
                             </TitleProject>

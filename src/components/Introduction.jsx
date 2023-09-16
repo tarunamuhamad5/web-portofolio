@@ -91,7 +91,7 @@ const Introduction = () => {
                     onClick={openCv}
                     align="center"
                 >
-                    Check out my CV
+                    Kindly Check My Resume
                 </CVButton>
             </ContainerIntroduction>
         </Box>
