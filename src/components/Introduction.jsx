@@ -12,7 +12,7 @@ import {
 const Introduction = () => {
     const openCv = () => {
         window.open(
-            "https://drive.google.com/file/d/1mp4K8rNtmj2baLm-_H0ZLrKgCAUc2lwq/view?usp=sharing",
+            "https://drive.google.com/drive/folders/1U4g2Pw4w_dB8vp5OjWsL8pp7cXCkmKfH?usp=sharing",
             "_blank"
         );
     };
