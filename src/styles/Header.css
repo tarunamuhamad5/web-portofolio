@@ -1,0 +1,5 @@
+.floating-navbar {
+    width: 100%;
+    z-index: 1000;
+    background-color: #f9f9f9;
+}
